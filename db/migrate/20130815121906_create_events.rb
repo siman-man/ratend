@@ -1,6 +1,7 @@
 class CreateEvents < ActiveRecord::Migration
   def self.up
     create_table :events do |t|
+      t.integer :user_id, :null => false
       t.string :name, :null => false
       t.integer :limit, :null => false
       t.text :content

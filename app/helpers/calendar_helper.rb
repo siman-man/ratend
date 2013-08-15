@@ -4,7 +4,7 @@ module CalendarHelper
   end
   
   def day_link(text, date, day_action)
-    opt = params.merge(:controller => :events, :action => day_action, :date => date.to_s(:db))
+    opt = params.merge(:controller => :events, :action => 'new', :date => date.to_s(:db))
     link_to(text, opt, :class => 'ec-day-link')
   end
 
