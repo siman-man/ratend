@@ -1,6 +1,8 @@
 Ratend::Application.routes.draw do
-  match '/calendar(/:year(/:month))' => 'calendar#index', 
-  :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/},
+  get "events/index"
+
+  match '/calendar(/:year(/:month(/:day)))' => 'calendar#index', 
+  :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/, :day => /\d{1,2}/},
   via: [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.

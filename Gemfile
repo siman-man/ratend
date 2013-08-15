@@ -10,6 +10,9 @@ gem 'event-calendar', :require => 'event_calendar'
 
 group :development do
   gem 'sqlite3'
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-rails'
 end
 
 gem 'sass-rails', '~> 4.0.0'

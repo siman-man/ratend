@@ -14,9 +14,10 @@
 ActiveRecord::Schema.define(version: 20130815121906) do
 
   create_table "events", force: true do |t|
-    t.string   "name"
-    t.datetime "start_at"
-    t.datetime "end_at"
+    t.integer  "user_id",                    null: false
+    t.string   "name",                       null: false
+    t.datetime "start_at",                   null: false
+    t.datetime "end_at",                     null: false
     t.boolean  "all_day",    default: false
     t.datetime "created_at"
     t.datetime "updated_at"
