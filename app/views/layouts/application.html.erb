@@ -11,10 +11,14 @@
     <![endif]-->
   </head>
   <body>
-    <%= render 'share/header' %>
+    <%= render 'shared/header' %>
     <div lass="container">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
       <%= yield %>
-      <%= render 'share/footer' %>
+      <%= render 'shared/footer' %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
