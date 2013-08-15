@@ -1,4 +1,5 @@
 Ratend::Application.routes.draw do
+  get "users/new"
   get "events/index"
 
   match '/calendar(/:year(/:month(/:day)))' => 'calendar#index', 
