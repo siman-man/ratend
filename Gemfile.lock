@@ -38,6 +38,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     erubis (2.7.0)
+    event-calendar (2.3.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.3)
@@ -119,6 +120,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  event-calendar
   jbuilder (~> 1.2)
   jquery-rails
   pg
